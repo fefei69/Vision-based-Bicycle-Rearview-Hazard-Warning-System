@@ -1,1 +1,5 @@
 # Bicycle Rearview-Based Hazard Warning System using Image Analysis
+## Introduction & Background 
+There are many fully developed and practical active warning systems based on image recognition nowadays, but most of them are designed for vehicles. Bicycles that often travel on various roads are easily collided by the vehicles behind because they lack rear vision and are slower than most vehicles. Therefore, a hazard warning system is needed to reduce the occurrence of accidents. The purpose of this research is to design a hazard warning system based on the rear view of the bicycle. 
+## Overview
+Our algorithm first employs lane detection to remove uninteresting objects; then, we used Yolov4-tiny object detection algorithm to identify the type of vehicle behind and combine with DeepSort object tracking algorithm to obtain the position and speed information of the vehicle behind the cyclist. Finally, together with the logic and safety zone we designed, the rider could determine whether the rear vehicle will cause danger with the information immediately displayed on the LCD screen. 
