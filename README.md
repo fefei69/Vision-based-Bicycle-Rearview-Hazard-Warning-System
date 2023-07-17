@@ -17,7 +17,7 @@ To greatly reduce the computation time of our hazard identification algorithms a
 <img src ="https://user-images.githubusercontent.com/69750888/207406845-341f7791-320c-4f3d-ae62-f3beafa901d4.png" width=400 length=400 ><img src ="https://user-images.githubusercontent.com/69750888/207406847-fce61d34-3ceb-413a-b37a-232c55d0a175.png" width=400 length=400>
 </div>
 
-(Top left) Green lane lines represent all detected lane lines by lane detection and the purple lane lines are the final detected lanes obtained by fitting all green lane lines to two proper lane lines. (Top right) Utilize lane lines of each side to form a trapezoidal mask. (Bottom left) Extend the trapezoidal mask in (Top right) to keep the tracked vehicle in sight. (Bottom right) Final masked region that allow us to only track the vehicle that might cause danger to rider. 
+(Top left) Green lane lines represent all detected lane lines by lane detection and the purple lane lines are the final detected lanes obtained by fitting all green lane lines to two proper lane lines. (Top right) Utilize lane lines of each side to form a trapezoidal mask. (Bottom left) Extend the trapezoidal mask (Top right) to keeping the tracked vehicle in sight. (Bottom right) Finally, masked region that allow us to only track the vehicle that might cause danger to rider. 
 ## Demo video of Lane Detection
 <img width="460" height="300" src="https://user-images.githubusercontent.com/69750888/207410432-6f3daeaf-e28d-4b4f-83d7-de2efd049168.mp4"/>
 
