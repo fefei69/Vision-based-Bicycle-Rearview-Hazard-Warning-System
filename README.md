@@ -1,4 +1,4 @@
-# Bicycle Rearview-Based Hazard Warning System using Image Analysis
+# Vision-based Bicycle Rearview Hazard Warning System 
 ## Introduction & Background 
 There are many fully developed and practical active warning systems based on image recognition nowadays, but most of them are designed for vehicles. Bicycles that often travel on various roads are easily collided by the vehicles behind because they lack rear vision and are slower than most vehicles. Therefore, a hazard warning system is needed to reduce the occurrence of accidents. The purpose of this research is to design a hazard warning system based on the rear view of the bicycle. 
 ## An overview of our algorithm
