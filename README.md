@@ -1,9 +1,30 @@
 # Vision-Based Bicycle Rearview Hazard Warning System
+
+- [Vision-Based Bicycle Rearview Hazard Warning System](#vision-based-bicycle-rearview-hazard-warning-system)
+  - [Introduction \& Background](#introduction--background)
+  - [An overview of our algorithm](#an-overview-of-our-algorithm)
+  - [Bicycle Rearview-Based Hazard Warning System](#bicycle-rearview-based-hazard-warning-system)
+  - [Lane Detection](#lane-detection)
+  - [Demo video of Lane Detection](#demo-video-of-lane-detection)
+  - [Object Detection](#object-detection)
+  - [Object Tracking](#object-tracking)
+  - [Speed \& Distance Detection](#speed--distance-detection)
+    - [Estimation of vehicle distance:](#estimation-of-vehicle-distance)
+    - [Estimation of vehicle speed:](#estimation-of-vehicle-speed)
+  - [Safety Zone \& Vehicle motion prediction](#safety-zone--vehicle-motion-prediction)
+    - [Safety Zone](#safety-zone)
+    - [Vehicle motion prediction](#vehicle-motion-prediction)
+  - [Hazard Prediction \& Warning](#hazard-prediction--warning)
+  - [Demo 1 (YouTube Link)](#demo-1-youtube-link)
+  - [Demo 2 (YouTube Link)](#demo-2-youtube-link)
+
+
+
 ## Introduction & Background 
 There are many fully developed and practical active warning systems based on image recognition nowadays, but most of them are designed for vehicles. Bicycles that often travel on various roads are easily collided by the vehicles behind because they lack rear vision and are slower than most vehicles. Therefore, a hazard warning system is needed to reduce the occurrence of accidents. The purpose of this research is to design a hazard warning system based on the rear view of the bicycle. 
 ## An overview of our algorithm
 Our algorithm first employs lane detection to remove uninteresting objects; then, we used Yolov4-tiny object detection algorithm to identify the type of vehicle behind and combine with DeepSort object tracking algorithm to obtain the position and speed information of the vehicle behind the cyclist. Finally, together with the logic and safety zone we designed, the rider could determine whether the rear vehicle will cause danger with the information immediately displayed on the LCD screen. 
-![sys_diag](https://user-images.githubusercontent.com/69750888/207406779-1ec4d2da-66ae-4c8e-8979-9cac38399f55.jpg)
+![ss_diag](https://user-images.githubusercontent.com/69750888/207406779-1ec4d2da-66ae-4c8e-8979-9cac38399f55.jpg)
 ## Bicycle Rearview-Based Hazard Warning System
 Rear video frames obtained by Web Cam. Jetson Nano is responsible for all computational tasks in our system. LCD and Buzzer warn the rider visually and audibly.
 <div align = "center">
