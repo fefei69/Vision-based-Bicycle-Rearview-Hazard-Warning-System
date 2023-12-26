@@ -18,8 +18,7 @@
   - [Hazard Prediction \& Warning](#hazard-prediction--warning)
   - [Demo 1 (YouTube Link)](#demo-1-youtube-link)
   - [Demo 2 (YouTube Link)](#demo-2-youtube-link)
-
-
+___
 
 ## Introduction & Background 
 There are many fully developed and practical active warning systems based on image recognition nowadays, but most of them are designed for vehicles. Bicycles that often travel on various roads are easily collided by the vehicles behind because they lack rear vision and are slower than most vehicles. Therefore, a hazard warning system is needed to reduce the occurrence of accidents. The purpose of this research is to design a hazard warning system based on the rear view of the bicycle. 
